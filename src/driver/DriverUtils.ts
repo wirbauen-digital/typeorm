@@ -18,6 +18,7 @@ export class DriverUtils {
             "sqlite",
             "cordova",
             "react-native",
+            "custom-react-native",
             "nativescript",
             "sqljs",
             "expo",

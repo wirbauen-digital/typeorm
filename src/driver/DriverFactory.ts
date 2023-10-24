@@ -19,6 +19,7 @@ import { SapDriver } from "./sap/SapDriver"
 import { BetterSqlite3Driver } from "./better-sqlite3/BetterSqlite3Driver"
 import { CapacitorDriver } from "./capacitor/CapacitorDriver"
 import { SpannerDriver } from "./spanner/SpannerDriver"
+import { CustomReactNativeDriver } from "./react-native/CustomReactNativeDriver"
 
 /**
  * Helps to create drivers.
@@ -30,6 +31,8 @@ export class DriverFactory {
     create(connection: DataSource): Driver {
         const { type } = connection.options
         switch (type) {
+            case 'custom-react-native':
+                return new CustomReactNativeDriver(connection)
             case "mysql":
                 return new MysqlDriver(connection)
             case "postgres":
@@ -84,6 +87,7 @@ export class DriverFactory {
                     "nativescript",
                     "oracle",
                     "postgres",
+                    "custom-react-native",
                     "react-native",
                     "sap",
                     "sqlite",

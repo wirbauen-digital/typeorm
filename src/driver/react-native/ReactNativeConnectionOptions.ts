@@ -7,7 +7,7 @@ export interface ReactNativeConnectionOptions extends BaseDataSourceOptions {
     /**
      * Database type.
      */
-    readonly type: "react-native"
+    readonly type: "react-native" | "custom-react-native"
 
     /**
      * Database name.
