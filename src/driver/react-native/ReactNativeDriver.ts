@@ -953,12 +953,12 @@ export class ReactNativeDriver implements Driver {
     protected loadDependencies(): void {
         try {
             const sqlite =
-                this.options.driver || require("react-native-sqlite-storage")
+                this.options.driver || require("react-native-quick-sqlite")
             this.sqlite = sqlite
         } catch (e) {
             throw new DriverPackageNotInstalledError(
                 "React-Native",
-                "react-native-sqlite-storage",
+                "react-native-quick-sqlite",
             )
         }
     }

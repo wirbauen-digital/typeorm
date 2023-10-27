@@ -121,10 +121,10 @@ export class PlatformTools {
                     return require("mssql")
 
                 /**
-                 * react-native-sqlite
+                 * react-native-quick-sqlite
                  */
-                case "react-native-sqlite-storage":
-                    return require("react-native-sqlite-storage")
+                case "react-native-quick-sqlite":
+                    return require("react-native-quick-sqlite")
             }
         } catch (err) {
             return require(path.resolve(
