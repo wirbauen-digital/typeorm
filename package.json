@@ -1,7 +1,6 @@
 {
-  "name": "typeorm",
-  "private": true,
-  "version": "0.3.17",
+  "name": "@wirbauen.digital/typeorm",
+  "version": "0.3.17-forked3",
   "description": "Data-Mapper ORM for TypeScript, ES7, ES6, ES5. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, MongoDB databases.",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -13,6 +12,7 @@
     "node": ">= 12.9.0"
   },
   "exports": {
+    "./package.json": "./package.json",
     ".": {
       "types": "./index.d.ts",
       "node": {
@@ -66,10 +66,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/typeorm/typeorm.git"
+    "url": "https://github.com/wirbauen-digital/typeorm.git"
   },
   "bugs": {
-    "url": "https://github.com/typeorm/typeorm/issues"
+    "url": "https://github.com/wirbauen-digital/typeorm/issues"
   },
   "homepage": "https://typeorm.io",
   "tags": [
@@ -97,6 +97,7 @@
     "@types/chai": "^4.3.4",
     "@types/chai-as-promised": "^7.1.5",
     "@types/debug": "^4.1.7",
+    "@types/glob": "^8.1.0",
     "@types/mkdirp": "^1.0.2",
     "@types/mocha": "^10.0.1",
     "@types/node": "^18.13.0",
@@ -217,6 +218,7 @@
   "dependencies": {
     "@sqltools/formatter": "^1.2.5",
     "app-root-path": "^3.1.0",
+    "async-mutex": "^0.4.0",
     "buffer": "^6.0.3",
     "chalk": "^4.1.2",
     "cli-highlight": "^2.1.11",

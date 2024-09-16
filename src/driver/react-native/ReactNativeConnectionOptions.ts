@@ -7,7 +7,7 @@ export interface ReactNativeConnectionOptions extends BaseDataSourceOptions {
     /**
      * Database type.
      */
-    readonly type: "react-native"
+    readonly type: "react-native" | "custom-react-native"
 
     /**
      * Database name.
@@ -16,7 +16,7 @@ export interface ReactNativeConnectionOptions extends BaseDataSourceOptions {
 
     /**
      * The driver object
-     * This defaults to require("react-native-sqlite-storage")
+     * This defaults to require("react-native-quick-sqlite")
      */
     readonly driver?: any
 

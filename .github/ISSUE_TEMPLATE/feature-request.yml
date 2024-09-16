@@ -75,6 +75,8 @@ body:
           required: false
         - label: react-native
           required: false
+        - label: custom-react-native
+          required: false
         - label: sap
           required: false
         - label: spanner
